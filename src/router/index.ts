@@ -32,6 +32,13 @@ const router = createRouter({
                 {path: 'child2', name: 'child2', component: () => import('../views/router/动态路由匹配/嵌套路由/child2.vue')},
                 {path: 'child3', name: 'child3', component: () => import('../views/router/动态路由匹配/嵌套路由/child3.vue')}
             ],
+        },
+        {
+            path: '/event',
+            name: 'event',
+            children: [
+                {path: 'click', name: 'click', component: () => import('../views/router/事件/click/点击事件.vue')},
+            ],
         }
     ]
 })

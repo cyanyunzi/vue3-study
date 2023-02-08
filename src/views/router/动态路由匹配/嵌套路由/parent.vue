@@ -1,6 +1,8 @@
 <template>
   这是父组件
 
+  <el-divider />
+
   <div>
     <router-view></router-view>
   </div>
