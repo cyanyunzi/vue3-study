@@ -50,6 +50,7 @@ const router = createRouter({
                 {path: 'computed', name: 'computed', component: () => import('../views/响应式/computed.vue')},
                 {path: 'watch', name: 'watch', component: () => import('../views/响应式/watch.vue')},
                 {path: 'watchEffect', name: 'watchEffect', component: () => import('../views/响应式/watchEffect.vue')},
+                {path: 'watchPostEffect', name: 'watchPostEffect', component: () => import('../views/响应式/watchPostEffect.vue')},
             ],
         },
         {
@@ -66,6 +67,14 @@ const router = createRouter({
             name: 'form',
             children: [
                 {path: '修饰符', name: '修饰符', component: () => import('../views/表单/修饰符.vue')},
+            ],
+        },
+        {
+            path: '/ref',
+            name: 'ref',
+            children: [
+                {path: 'common', name: 'common', component: () => import('../views/引用/ref简单demo.vue')},
+                {path: 'parentChild', name: 'parentChild', component: () => import('../views/引用/ref父子组件引用/parent.vue')},
             ],
         },
 

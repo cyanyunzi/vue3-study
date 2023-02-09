@@ -109,6 +109,10 @@
             <el-menu-item index="3-1-5">watchEffect</el-menu-item>
           </router-link>
 
+          <router-link to="/res/watchPostEffect">
+            <el-menu-item index="3-1-6">watchPostEffect</el-menu-item>
+          </router-link>
+
         </el-sub-menu>
 
 
@@ -139,6 +143,21 @@
 
           <router-link to="/form/修饰符">
             <el-menu-item index="5-1">修饰符</el-menu-item>
+          </router-link>
+        </el-sub-menu>
+
+        <el-sub-menu index="6">
+          <template #title>
+            <el-icon><location /></el-icon>
+            <span>引用</span>
+          </template>
+
+          <router-link to="/ref/common">
+            <el-menu-item index="6-1">当前组件的ref</el-menu-item>
+          </router-link>
+
+          <router-link to="/ref/parentChild">
+            <el-menu-item index="6-2">ref父子组件引用</el-menu-item>
           </router-link>
         </el-sub-menu>
 
