@@ -77,7 +77,72 @@
             </router-link>
           </el-sub-menu>
 
+          <router-link to="/event/funtion">
+            <el-menu-item index="2-2">事件方法处理</el-menu-item>
+          </router-link>
+
         </el-sub-menu>
+
+        <el-sub-menu index="3">
+          <template #title>
+            <el-icon><location /></el-icon>
+            <span>响应式</span>
+          </template>
+
+          <router-link to="/res/reactive">
+            <el-menu-item index="3-1-1">reactive</el-menu-item>
+          </router-link>
+
+          <router-link to="/res/ref">
+            <el-menu-item index="3-1-2">ref</el-menu-item>
+          </router-link>
+
+          <router-link to="/res/computed">
+            <el-menu-item index="3-1-3">computed</el-menu-item>
+          </router-link>
+
+          <router-link to="/res/watch">
+            <el-menu-item index="3-1-4">watch</el-menu-item>
+          </router-link>
+
+          <router-link to="/res/watchEffect">
+            <el-menu-item index="3-1-5">watchEffect</el-menu-item>
+          </router-link>
+
+        </el-sub-menu>
+
+
+        <el-sub-menu index="4">
+          <template #title>
+            <el-icon><location /></el-icon>
+            <span>绑定样式</span>
+          </template>
+
+          <router-link to="/class/style">
+            <el-menu-item index="4-1">style</el-menu-item>
+          </router-link>
+
+          <router-link to="/class/class">
+            <el-menu-item index="4-2">class</el-menu-item>
+          </router-link>
+
+          <router-link to="/class/parentChild">
+            <el-menu-item index="4-2">父子样式</el-menu-item>
+          </router-link>
+        </el-sub-menu>
+
+        <el-sub-menu index="5">
+          <template #title>
+            <el-icon><location /></el-icon>
+            <span>表单</span>
+          </template>
+
+          <router-link to="/form/修饰符">
+            <el-menu-item index="5-1">修饰符</el-menu-item>
+          </router-link>
+        </el-sub-menu>
+
+
 
       </el-menu>
     </el-col>
